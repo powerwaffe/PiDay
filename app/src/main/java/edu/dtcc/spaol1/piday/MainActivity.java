@@ -54,6 +54,10 @@ public class MainActivity extends AppCompatActivity
                     count++;
                     Thread.sleep(DELAY);
                     threadHandler.sendEmptyMessage(0);
+                    if (count == 16)
+                    {
+                        count = 0;
+                    }
                 }
             }
             catch (InterruptedException e)
